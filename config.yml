@@ -1,0 +1,18 @@
+### Login method ###
+# [FEIDE, PIN]
+login_method: FEIDE
+
+### FEIDE ###
+username: username
+# If you leave this empty the program will prompt you for a password [RECOMMENDED]
+password:
+
+### Fødselsnummer and PIN-code ###
+ssn: 12345678912
+# If you leave this empty the program will prompt you for a PIN [RECOMMENDED]
+pin:
+
+### Institution ###
+institution_code: 'FSWACT'
+# As shown in the select-bar on studweb
+institution_name: 'Westerdals Oslo ACT'
