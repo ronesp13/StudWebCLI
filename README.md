@@ -11,7 +11,7 @@ Dependencies
 
 Run the following commands to install the needed
 ```sh
-sudo apt-get install xvfd
+sudo apt-get install xvfb
 bundle install
 ```
 
