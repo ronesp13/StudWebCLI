@@ -25,7 +25,7 @@ end
 def feide_login(browser)
   prompt_password if prompt_password?
   puts 'Attempting to log in using FEIDE'
-  browser.element(css: '#j_idt129\:j_idt141 > a:nth-child(6)').click
+  browser.element(css: '#j_idt130\:j_idt142 > a:nth-child(6)').click
   choose_affiliation browser
   browser.text_field(id: 'username').set @config['username']
   browser.text_field(id: 'password').set @config['password']
@@ -36,9 +36,10 @@ def pin_login(browser)
   prompt_pin if prompt_pin?
   puts 'Attempting to log in using PIN'
   browser.element(css: 'div.login-flap.login-name-pin').click
-  browser.text_field(id: 'j_idt129:j_idt131:fodselsnummer').set @config['ssn']
-  browser.text_field(id: 'j_idt129:j_idt131:pincode').set @config['pin']
-  browser.element(css: '#j_idt129\:j_idt131\:login').click
+  browser.text_field(id: 'j_idt130:j_idt132:fodselsnummer').set @config['ssn']
+  browser.text_field(id: 'j_idt130:j_idt132:pincode').set @config['pin']
+  browser.element(css: '#j_idt130\:j_idt132\:login').click
+
   choose_affiliation browser
   browser.element(css: '#infoPanel\:popup_title > header:nth-child(1)').wait_while_present
   if browser.element(css: 'ul.feedback-full.error').present?
